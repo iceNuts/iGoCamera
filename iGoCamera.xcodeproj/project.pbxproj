@@ -20,6 +20,7 @@
 		430B91A716860FAB0098E2E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B91A616860FAB0098E2E1 /* MobileCoreServices.framework */; };
 		430B91A916860FBF0098E2E1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B91A816860FBF0098E2E1 /* libz.dylib */; };
 		430B9211168640FB0098E2E1 /* libASIHTTP_ARCFREE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B920D168640C70098E2E1 /* libASIHTTP_ARCFREE.a */; };
+		4311A173168DFD43002BA2AE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4311A172168DFD43002BA2AE /* Icon@2x.png */; };
 		438C5992168D377B005DB5FA /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C5991168D377B005DB5FA /* GCDAsyncSocket.m */; };
 		438C5998168D3F28005DB5FA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C5997168D3F28005DB5FA /* Security.framework */; };
 		438FFBC1168433CB00D60C0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438FFBC0168433CB00D60C0D /* UIKit.framework */; };
@@ -81,6 +82,7 @@
 		430B91A616860FAB0098E2E1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		430B91A816860FBF0098E2E1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		430B9205168640C70098E2E1 /* ASIHTTP_ARCFREE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ASIHTTP_ARCFREE.xcodeproj; path = ../ASIHTTP_ARCFREE/ASIHTTP_ARCFREE.xcodeproj; sourceTree = "<group>"; };
+		4311A172168DFD43002BA2AE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		438C5990168D377B005DB5FA /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = ../../CocoaAsyncSocket/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
 		438C5991168D377B005DB5FA /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = ../../CocoaAsyncSocket/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
 		438C5997168D3F28005DB5FA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -195,6 +197,7 @@
 		438FFBB1168433CB00D60C0D = {
 			isa = PBXGroup;
 			children = (
+				4311A172168DFD43002BA2AE /* Icon@2x.png */,
 				438C5997168D3F28005DB5FA /* Security.framework */,
 				430B9205168640C70098E2E1 /* ASIHTTP_ARCFREE.xcodeproj */,
 				438FFBC8168433CC00D60C0D /* iGoCamera */,
@@ -333,6 +336,7 @@
 				430B91181685A5E40098E2E1 /* proceed@2x.png in Resources */,
 				430B91191685A5E40098E2E1 /* idle.png in Resources */,
 				430B911C1685A63C0098E2E1 /* idle@2x.png in Resources */,
+				4311A173168DFD43002BA2AE /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
