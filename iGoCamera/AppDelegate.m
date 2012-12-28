@@ -20,7 +20,48 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    return YES;
+	
+	launchController* launchStarter = [[launchController alloc] initWithNibName:@"launchView0" bundle:nil];
+	self.window.rootViewController = [[UIViewController alloc] init];
+	[self.window.rootViewController presentViewController:launchStarter animated:NO completion:nil];
+	
+	//Timer for clear waiting list
+	[NSTimer scheduledTimerWithTimeInterval:30.0 target:self selector:@selector(photoClear) userInfo:nil repeats:YES];
+
+	return YES;
+}
+
+//for timer
+- (void) photoClear{
+	NSString* filePath = [self storagePath];
+	NSFileManager *manager = [[NSFileManager alloc] init];
+	NSDirectoryEnumerator *dirEnum = [manager enumeratorAtPath:filePath];
+	
+	NSString* file;
+	for(file in dirEnum){
+		//upload photo to server
+		NSURL* url = [NSURL URLWithString:@"http://itp.59igou.com/iGoCameraPhoto.php"];
+		ASIFormDataRequest* request = [ASIFormDataRequest requestWithURL: url];
+		[request setFile:[filePath stringByAppendingPathComponent:file] withFileName:file andContentType:@"image/jpeg"
+					forKey:@"photo"];
+		[request setCompletionBlock:^{
+//			NSLog(@"%d",[request responseStatusCode]);
+			if(200 == [request responseStatusCode]){
+				[manager removeItemAtPath:[filePath stringByAppendingPathComponent:file] error:nil];
+			}
+		}];
+		[request setFailedBlock:^{
+			NSLog(@"%@", [request error]);
+		}];
+		[request startAsynchronous];
+	}
+}
+
+- (NSString*) storagePath{
+	
+	NSArray *StoreFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *DoucumentsDirectiory = [StoreFilePath objectAtIndex:0];
+	return DoucumentsDirectiory;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -33,6 +74,7 @@
 {
 	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
 	// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+	exit(0);
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

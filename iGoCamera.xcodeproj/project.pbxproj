@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430B910B16859D330098E2E1 /* launchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430B910A16859D330098E2E1 /* launchController.m */; };
+		430B911116859E9D0098E2E1 /* launchView0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430B911016859E9D0098E2E1 /* launchView0.xib */; };
+		430B91171685A5E40098E2E1 /* proceed.png in Resources */ = {isa = PBXBuildFile; fileRef = 430B91131685A5E40098E2E1 /* proceed.png */; };
+		430B91181685A5E40098E2E1 /* proceed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 430B91141685A5E40098E2E1 /* proceed@2x.png */; };
+		430B91191685A5E40098E2E1 /* idle.png in Resources */ = {isa = PBXBuildFile; fileRef = 430B91151685A5E40098E2E1 /* idle.png */; };
+		430B911C1685A63C0098E2E1 /* idle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 430B911B1685A63C0098E2E1 /* idle@2x.png */; };
+		430B91321685B21C0098E2E1 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 430B91311685B21C0098E2E1 /* GCDAsyncUdpSocket.m */; };
+		430B913C1685D2B00098E2E1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B913B1685D2B00098E2E1 /* AVFoundation.framework */; };
+		430B916316860DDD0098E2E1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B916216860DDD0098E2E1 /* CFNetwork.framework */; };
+		430B91A516860FA40098E2E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B91A416860FA30098E2E1 /* SystemConfiguration.framework */; };
+		430B91A716860FAB0098E2E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B91A616860FAB0098E2E1 /* MobileCoreServices.framework */; };
+		430B91A916860FBF0098E2E1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B91A816860FBF0098E2E1 /* libz.dylib */; };
+		430B9211168640FB0098E2E1 /* libASIHTTP_ARCFREE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 430B920D168640C70098E2E1 /* libASIHTTP_ARCFREE.a */; };
+		438C5992168D377B005DB5FA /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C5991168D377B005DB5FA /* GCDAsyncSocket.m */; };
+		438C5998168D3F28005DB5FA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C5997168D3F28005DB5FA /* Security.framework */; };
 		438FFBC1168433CB00D60C0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438FFBC0168433CB00D60C0D /* UIKit.framework */; };
 		438FFBC3168433CB00D60C0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438FFBC2168433CB00D60C0D /* Foundation.framework */; };
 		438FFBC5168433CC00D60C0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438FFBC4168433CB00D60C0D /* CoreGraphics.framework */; };
@@ -20,7 +35,55 @@
 		438FFBDC168433CC00D60C0D /* iGoCamera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438FFBDA168433CC00D60C0D /* iGoCamera.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		430B920C168640C70098E2E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 430B9205168640C70098E2E1 /* ASIHTTP_ARCFREE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 430B91B51686144B0098E2E1;
+			remoteInfo = ASIHTTP_ARCFREE;
+		};
+		430B920F168640EE0098E2E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 430B9205168640C70098E2E1 /* ASIHTTP_ARCFREE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 430B91B41686144B0098E2E1;
+			remoteInfo = ASIHTTP_ARCFREE;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		430B910916859D330098E2E1 /* launchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = launchController.h; path = ViewController/launchController.h; sourceTree = "<group>"; };
+		430B910A16859D330098E2E1 /* launchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = launchController.m; path = ViewController/launchController.m; sourceTree = "<group>"; };
+		430B911016859E9D0098E2E1 /* launchView0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = launchView0.xib; path = View/launchView0.xib; sourceTree = "<group>"; };
+		430B91131685A5E40098E2E1 /* proceed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = proceed.png; path = UI/proceed.png; sourceTree = "<group>"; };
+		430B91141685A5E40098E2E1 /* proceed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "proceed@2x.png"; path = "UI/proceed@2x.png"; sourceTree = "<group>"; };
+		430B91151685A5E40098E2E1 /* idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = idle.png; path = UI/idle.png; sourceTree = "<group>"; };
+		430B911B1685A63C0098E2E1 /* idle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "idle@2x.png"; path = "UI/idle@2x.png"; sourceTree = "<group>"; };
+		430B91301685B21C0098E2E1 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = socket/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		430B91311685B21C0098E2E1 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = socket/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		430B913B1685D2B00098E2E1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		430B916216860DDD0098E2E1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		430B918416860F780098E2E1 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = ASIHTTP/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		430B918616860F780098E2E1 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = ASIHTTP/ASICacheDelegate.h; sourceTree = "<group>"; };
+		430B918716860F780098E2E1 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = ASIHTTP/ASIDataCompressor.h; sourceTree = "<group>"; };
+		430B918916860F780098E2E1 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = ASIHTTP/ASIDataDecompressor.h; sourceTree = "<group>"; };
+		430B918B16860F780098E2E1 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = ASIHTTP/ASIDownloadCache.h; sourceTree = "<group>"; };
+		430B918D16860F780098E2E1 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = ASIHTTP/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		430B918F16860F780098E2E1 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = ASIHTTP/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		430B919116860F780098E2E1 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = ASIHTTP/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		430B919216860F780098E2E1 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = ASIHTTP/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		430B919316860F780098E2E1 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = ASIHTTP/ASIInputStream.h; sourceTree = "<group>"; };
+		430B919516860F780098E2E1 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = ASIHTTP/ASINetworkQueue.h; sourceTree = "<group>"; };
+		430B919716860F780098E2E1 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = ASIHTTP/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		430B919916860F780098E2E1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		430B91A416860FA30098E2E1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		430B91A616860FAB0098E2E1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		430B91A816860FBF0098E2E1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		430B9205168640C70098E2E1 /* ASIHTTP_ARCFREE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ASIHTTP_ARCFREE.xcodeproj; path = ../ASIHTTP_ARCFREE/ASIHTTP_ARCFREE.xcodeproj; sourceTree = "<group>"; };
+		438C5990168D377B005DB5FA /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = ../../CocoaAsyncSocket/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		438C5991168D377B005DB5FA /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = ../../CocoaAsyncSocket/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		438C5997168D3F28005DB5FA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		438FFBBC168433CB00D60C0D /* iGoCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGoCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438FFBC0168433CB00D60C0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		438FFBC2168433CB00D60C0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,9 +106,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438C5998168D3F28005DB5FA /* Security.framework in Frameworks */,
+				430B9211168640FB0098E2E1 /* libASIHTTP_ARCFREE.a in Frameworks */,
+				430B91A916860FBF0098E2E1 /* libz.dylib in Frameworks */,
+				438FFBC5168433CC00D60C0D /* CoreGraphics.framework in Frameworks */,
+				430B91A716860FAB0098E2E1 /* MobileCoreServices.framework in Frameworks */,
+				430B91A516860FA40098E2E1 /* SystemConfiguration.framework in Frameworks */,
+				430B916316860DDD0098E2E1 /* CFNetwork.framework in Frameworks */,
+				430B913C1685D2B00098E2E1 /* AVFoundation.framework in Frameworks */,
 				438FFBC1168433CB00D60C0D /* UIKit.framework in Frameworks */,
 				438FFBC3168433CB00D60C0D /* Foundation.framework in Frameworks */,
-				438FFBC5168433CC00D60C0D /* CoreGraphics.framework in Frameworks */,
 				438FFBC7168433CC00D60C0D /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,9 +123,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		430B910816859C990098E2E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				430B910916859D330098E2E1 /* launchController.h */,
+				430B910A16859D330098E2E1 /* launchController.m */,
+				430B911016859E9D0098E2E1 /* launchView0.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		430B91121685A5D20098E2E1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				430B911B1685A63C0098E2E1 /* idle@2x.png */,
+				430B91131685A5E40098E2E1 /* proceed.png */,
+				430B91141685A5E40098E2E1 /* proceed@2x.png */,
+				430B91151685A5E40098E2E1 /* idle.png */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		430B91211685B11D0098E2E1 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				438C5990168D377B005DB5FA /* GCDAsyncSocket.h */,
+				438C5991168D377B005DB5FA /* GCDAsyncSocket.m */,
+				430B91301685B21C0098E2E1 /* GCDAsyncUdpSocket.h */,
+				430B91311685B21C0098E2E1 /* GCDAsyncUdpSocket.m */,
+			);
+			name = Socket;
+			sourceTree = "<group>";
+		};
+		430B9141168605F50098E2E1 /* ASIHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				430B918416860F780098E2E1 /* ASIAuthenticationDialog.h */,
+				430B918616860F780098E2E1 /* ASICacheDelegate.h */,
+				430B918716860F780098E2E1 /* ASIDataCompressor.h */,
+				430B918916860F780098E2E1 /* ASIDataDecompressor.h */,
+				430B918B16860F780098E2E1 /* ASIDownloadCache.h */,
+				430B918D16860F780098E2E1 /* ASIFormDataRequest.h */,
+				430B918F16860F780098E2E1 /* ASIHTTPRequest.h */,
+				430B919116860F780098E2E1 /* ASIHTTPRequestConfig.h */,
+				430B919216860F780098E2E1 /* ASIHTTPRequestDelegate.h */,
+				430B919316860F780098E2E1 /* ASIInputStream.h */,
+				430B919516860F780098E2E1 /* ASINetworkQueue.h */,
+				430B919716860F780098E2E1 /* ASIProgressDelegate.h */,
+				430B919816860F780098E2E1 /* Reachability */,
+			);
+			name = ASIHTTP;
+			sourceTree = "<group>";
+		};
+		430B919816860F780098E2E1 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				430B919916860F780098E2E1 /* Reachability.h */,
+			);
+			name = Reachability;
+			path = ASIHTTP/Reachability;
+			sourceTree = "<group>";
+		};
+		430B9206168640C70098E2E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				430B920D168640C70098E2E1 /* libASIHTTP_ARCFREE.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		438FFBB1168433CB00D60C0D = {
 			isa = PBXGroup;
 			children = (
+				438C5997168D3F28005DB5FA /* Security.framework */,
+				430B9205168640C70098E2E1 /* ASIHTTP_ARCFREE.xcodeproj */,
 				438FFBC8168433CC00D60C0D /* iGoCamera */,
 				438FFBBF168433CB00D60C0D /* Frameworks */,
 				438FFBBD168433CB00D60C0D /* Products */,
@@ -73,6 +214,11 @@
 		438FFBBF168433CB00D60C0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				430B91A816860FBF0098E2E1 /* libz.dylib */,
+				430B91A616860FAB0098E2E1 /* MobileCoreServices.framework */,
+				430B91A416860FA30098E2E1 /* SystemConfiguration.framework */,
+				430B916216860DDD0098E2E1 /* CFNetwork.framework */,
+				430B913B1685D2B00098E2E1 /* AVFoundation.framework */,
 				438FFBC0168433CB00D60C0D /* UIKit.framework */,
 				438FFBC2168433CB00D60C0D /* Foundation.framework */,
 				438FFBC4168433CB00D60C0D /* CoreGraphics.framework */,
@@ -84,6 +230,10 @@
 		438FFBC8168433CC00D60C0D /* iGoCamera */ = {
 			isa = PBXGroup;
 			children = (
+				430B9141168605F50098E2E1 /* ASIHTTP */,
+				430B91211685B11D0098E2E1 /* Socket */,
+				430B91121685A5D20098E2E1 /* UI */,
+				430B910816859C990098E2E1 /* ViewController */,
 				438FFBD1168433CC00D60C0D /* AppDelegate.h */,
 				438FFBD2168433CC00D60C0D /* AppDelegate.m */,
 				438FFBDA168433CC00D60C0D /* iGoCamera.xcdatamodeld */,
@@ -120,6 +270,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				430B9210168640EE0098E2E1 /* PBXTargetDependency */,
 			);
 			name = iGoCamera;
 			productName = iGoCamera;
@@ -145,12 +296,28 @@
 			mainGroup = 438FFBB1168433CB00D60C0D;
 			productRefGroup = 438FFBBD168433CB00D60C0D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 430B9206168640C70098E2E1 /* Products */;
+					ProjectRef = 430B9205168640C70098E2E1 /* ASIHTTP_ARCFREE.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				438FFBBB168433CB00D60C0D /* iGoCamera */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		430B920D168640C70098E2E1 /* libASIHTTP_ARCFREE.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libASIHTTP_ARCFREE.a;
+			remoteRef = 430B920C168640C70098E2E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		438FFBBA168433CB00D60C0D /* Resources */ = {
@@ -161,6 +328,11 @@
 				438FFBD5168433CC00D60C0D /* Default.png in Resources */,
 				438FFBD7168433CC00D60C0D /* Default@2x.png in Resources */,
 				438FFBD9168433CC00D60C0D /* Default-568h@2x.png in Resources */,
+				430B911116859E9D0098E2E1 /* launchView0.xib in Resources */,
+				430B91171685A5E40098E2E1 /* proceed.png in Resources */,
+				430B91181685A5E40098E2E1 /* proceed@2x.png in Resources */,
+				430B91191685A5E40098E2E1 /* idle.png in Resources */,
+				430B911C1685A63C0098E2E1 /* idle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,10 +346,21 @@
 				438FFBCF168433CC00D60C0D /* main.m in Sources */,
 				438FFBD3168433CC00D60C0D /* AppDelegate.m in Sources */,
 				438FFBDC168433CC00D60C0D /* iGoCamera.xcdatamodeld in Sources */,
+				430B910B16859D330098E2E1 /* launchController.m in Sources */,
+				430B91321685B21C0098E2E1 /* GCDAsyncUdpSocket.m in Sources */,
+				438C5992168D377B005DB5FA /* GCDAsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		430B9210168640EE0098E2E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ASIHTTP_ARCFREE;
+			targetProxy = 430B920F168640EE0098E2E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		438FFBCB168433CC00D60C0D /* InfoPlist.strings */ = {
@@ -200,7 +383,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Changxu Du (CZSHHDF5V2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Changxu Du (CZSHHDF5V2)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -215,6 +399,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "780CB59E-E88E-4456-8A07-6612518CE3E3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "780CB59E-E88E-4456-8A07-6612518CE3E3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -229,7 +415,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Changxu Du (CZSHHDF5V2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Changxu Du (CZSHHDF5V2)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -237,6 +424,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "780CB59E-E88E-4456-8A07-6612518CE3E3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "780CB59E-E88E-4456-8A07-6612518CE3E3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -249,6 +438,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGoCamera/iGoCamera-Prefix.pch";
 				INFOPLIST_FILE = "iGoCamera/iGoCamera-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iGoCamera\"/**",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -260,6 +453,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGoCamera/iGoCamera-Prefix.pch";
 				INFOPLIST_FILE = "iGoCamera/iGoCamera-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iGoCamera\"/**",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -284,6 +481,7 @@
 				438FFBE1168433CC00D60C0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

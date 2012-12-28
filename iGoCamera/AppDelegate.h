@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "launchController.h"
+#import "ASIFormDataRequest.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
